@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(204, 204, 204);
+}
+.images{
+     display:flex;
+    transition: all 0.8s;
+}
+.images img{
+    transition: all 0.8s;
+}
+.window{
+    width:600px;
+    overflow:hidden;
+    margin: 150px auto 0;
+    box-shadow: 0 0 5px black;
+}
+#buttons{
+    display:block;
+    text-align: center;
+}
+#buttons span{
+    display: inline-block;
+    margin: 5px 3px;
+    border: 1px solid rgb(103, 101, 104);
+    padding: 5px;
+    border-radius: 50%;
+}
+.blue{
+    background-color: rgb(95, 89, 89);
+    border-radius: 50%;
+    transition: all 0.3s;
+}
