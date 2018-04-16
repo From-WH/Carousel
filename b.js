@@ -19,17 +19,17 @@ playSlide(n % size)
 var timeID = sitTimer()
 
 
-$('.window').on('mouseenter', function () {              //如果鼠标停留在window区域，就砸了上面的闹钟
+$('.window').on('mouseenter', function () {              
     window.clearInterval(timeID)
 })
-$('.window').on('mouseleave', function () {              //重新创造一个计时器
+$('.window').on('mouseleave', function () {             
     timeID = sitTimer()
 })
 
 function sitTimer() {
     return setInterval(() => {
-        n += 1                    //重复调用一个函数，有一定时间延迟
-        playSlide(n % size)//siblings接受的是选择器所以有. removeClass接受的是类名所以没有
+        n += 1                                    
+        playSlide(n % size)                       
     }, 2000)
 }
 function playSlide(index) {
